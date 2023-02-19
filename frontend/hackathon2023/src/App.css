@@ -2,12 +2,18 @@ p {
     margin: 0;
 }
 
+body {
+    overflow: hidden;
+}
+
 .page-container {
     display: grid;
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
+    gap: 1rem;
+    grid-template-rows: min-content;
+    grid-template-columns: 1fr;
 }
 
 #test-text {
