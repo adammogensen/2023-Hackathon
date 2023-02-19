@@ -1,0 +1,38 @@
+.value-row {
+    display: grid;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+    margin-inline: 1rem;
+    grid-template-columns: 2fr 2.25rem 5fr;
+    align-items: center;
+}
+
+.value-row-name {
+    text-align: end;
+    font-weight: bold;
+}
+
+.value-row-name::after {
+    content: ":";
+}
+
+.value-row-num {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.value-row-num-container {
+    display: flex;
+    width: 2.25rem;
+    height: 2.25rem;
+    background: #f9fffc;
+    box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+}
